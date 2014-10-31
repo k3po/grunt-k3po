@@ -12,11 +12,9 @@ module.exports = function (grunt) {
 
     grunt.registerMultiTask('k3po', 'Plugin to utilize k3po (https://github.com/kaazing/robot) from grunt builds', function () {
         var options = this.options({
-            start: false,
-            stop: false,
             daemon: true,
             uri: "tcp://localhost:11642",
-            verbose: true,
+            verbose: false,
             scripts: "test/scripts",
             goal: "start"
         });
