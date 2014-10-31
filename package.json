@@ -1,0 +1,62 @@
+{
+    "name": "grunt-k3po",
+    "description": "Plugin to utilize k3po (https://github.com/kaazing/robot) from grunt builds",
+    "version": "0.1.0",
+    "homepage": "https://github.com/kaazing/grunt-k3po",
+    "author": {
+        "name": "David Witherspoon",
+        "email": "david.witherspoon@kaazing.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/kaazing/grunt-k3po"
+    },
+    "bugs": {
+        "url": "https://github.com/kaazing/grunt-k3po/issues"
+    },
+    "licenses": [
+        {
+            "type": "Apache 2",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    ],
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "scripts": {
+        "test": "grunt test"
+    },
+    "require": {
+        "java": "^0.2.0"
+    },
+    "devDependencies": {
+        "grunt-contrib-jshint": "^0.9.2",
+        "grunt-contrib-clean": "^0.5.0",
+        "grunt-contrib-nodeunit": "^0.3.3",
+        "grunt": "~0.4.5",
+        "java": "^0.2.0",
+        "node-java-maven": "0.0.3"
+    },
+    "peerDependencies": {
+        "grunt": "~0.4.5"
+    },
+    "keywords": [
+        "gruntplugin"
+    ],
+    "java": {
+        "dependencies": [
+            {
+                "groupId": "org.kaazing",
+                "artifactId": "robot.all",
+                "version": "2.0.0-alpha-4-SNAPSHOT"
+            },
+            {
+                "groupId": "org.kaazing",
+                "artifactId": "robotic.control",
+                "version": "1.0.0-alpha-1-SNAPSHOT"
+            }
+
+        ]
+    }
+
+}

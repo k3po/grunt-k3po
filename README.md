@@ -1,24 +1,96 @@
-grunt-k3p0
-========
+# grunt-k3po
+
+> Plugin to utilize k3po (https://github.com/kaazing/robot) from grunt builds
 
 ##Required for building
 
 * [Node.js](http://nodejs.org/)
-* [Bower](http://bower.io/)
 * [Grunt](http://gruntjs.com/)
 
 ##Steps to build
 
 * Command to install all the dependencies:```npm install```
-* Command to get project dependencies:```bower install```
 * Command to build: ```grunt```
 
-##Directory structure
-* files: package.json, GruntFile.js, bower.json, README.md, LICENSE
-* src: Source files
-* demo: Demo files
-* docs: Supporting documents
-* test: Test files and karma config to run tests. Test can be run by using ```grunt karma``` commnd.
-* dist: A distribution directory will be generated which has generated-demo and jsdoc directories.
-* generated-demo: Has the complete demo package, which includes generated amqp-0-9-1.js library and demo files.
-* jsdoc: JSDOC generated from 
+## Getting Started
+This plugin requires Grunt `~0.4.5`
+
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+
+```shell
+npm install grunt-k3po --save-dev
+```
+
+Once the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
+
+```js
+grunt.loadNpmTasks('grunt-k3po');
+```
+
+## The "k3po" task
+
+### Overview
+In your project's Gruntfile, add a section named `k3po` to the data object passed into `grunt.initConfig()`.
+
+```js
+grunt.initConfig({
+  k3po: {
+    options: {
+      // Task-specific options go here.
+    }
+  },
+});
+```
+
+### Options
+
+#### options.separator
+Type: `String`
+Default value: `',  '`
+
+A string value that is used to do something with whatever.
+
+#### options.punctuation
+Type: `String`
+Default value: `'.'`
+
+A string value that is used to do something else with whatever else.
+
+### Usage Examples
+
+#### Default Options
+In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+
+```js
+grunt.initConfig({
+  k3po: {
+    options: {},
+    files: {
+      'dest/default_options': ['src/testing', 'src/123'],
+    },
+  },
+});
+```
+
+#### Custom Options
+In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+
+```js
+grunt.initConfig({
+  k3po: {
+    options: {
+      separator: ': ',
+      punctuation: ' !!!',
+    },
+    files: {
+      'dest/default_options': ['src/testing', 'src/123'],
+    },
+  },
+});
+```
+
+## Contributing
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+
+## Release History
+_(Nothing yet)_
