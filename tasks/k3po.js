@@ -19,7 +19,6 @@ module.exports = function (grunt) {
             goal: "start"
         });
 
-
         var done = this.async();
 
         var fs = require('fs');
