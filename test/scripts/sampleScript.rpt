@@ -1,0 +1,11 @@
+accept tcp://localhost:12346
+accepted
+connected
+write "hello"
+close
+closed
+
+connect tcp://localhost:12346
+connected
+read "hello"
+closed
