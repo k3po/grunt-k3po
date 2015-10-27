@@ -48,7 +48,7 @@ module.exports = function (grunt) {
                 }
 
                 var javaURI = java.callStaticMethodSync("java.net.URI", "create", options.uri);
-                var javaRobotServer = java.newInstanceSync("org.kaazing.robot.driver.RobotServer", javaURI, options.verbose, javaClassLoader);
+                var javaRobotServer = java.newInstanceSync("org.kaazing.k3po.driver.internal.RobotServer", javaURI, options.verbose, javaClassLoader);
 
                 grunt.log.writeln("Starting Robot");
                 javaRobotServer.startSync();

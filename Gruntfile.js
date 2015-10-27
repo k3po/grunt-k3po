@@ -62,7 +62,8 @@ module.exports = function (grunt) {
     // then start k3po with this plugin
     // then run the tests
     // then stop k3po with this plugin
-    grunt.registerTask('test', ['k3po:start', 'nodeunit', 'k3po:stop']);
+    // grunt.registerTask('test', ['k3po:start', 'nodeunit', 'k3po:stop']);
+    grunt.registerTask('test', ['k3po:start', 'k3po:stop']);
 
     grunt.registerTask('runRobot', ['k3po:daemon']);
     // By default, lint and run all tests.

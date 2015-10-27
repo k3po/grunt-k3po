@@ -36,8 +36,8 @@
         "grunt-contrib-nodeunit": "^0.3.3"
     },
     "dependencies": {
-        "java": "^0.2.0",
-        "node-java-maven": "0.0.3"
+        "java": "^0.6.0",
+        "node-java-maven": "0.0.9"
     },
     "peerDependencies": {
         "grunt": "~0.4.5"
@@ -49,13 +49,8 @@
         "dependencies": [
             {
                 "groupId": "org.kaazing",
-                "artifactId": "robot.all",
-                "version": "2.0.0-alpha-4-SNAPSHOT"
-            },
-            {
-                "groupId": "org.kaazing",
-                "artifactId": "robotic.control",
-                "version": "1.0.0-alpha-1-SNAPSHOT"
+                "artifactId": "k3po.driver",
+                "version": "3.0.0-alpha-1"
             }
         ]
     }
