@@ -92,8 +92,8 @@ exports.k3p0 = {
                 console.log("Writing Prepare");
                 client.write("PREPARE\n");
                 client.write("version:2.0\n");
-                client.write("name:org/kaazing/robotic/control/accept.finished.empty\n");
-                client.write("name:org/kaazing/robotic/control/connect.finished.empty\n");
+                client.write("name:org/kaazing/specification/ws/opening/connection.established/handshake.response\n");
+                client.write("name:org/kaazing/specification/ws/opening/connection.established/handshake.request\n");
                 client.write("\n");
             });
 
