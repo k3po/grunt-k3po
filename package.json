@@ -1,7 +1,8 @@
 {
     "name": "grunt-k3po",
-    "description": "Plugin to utilize k3po (https://github.com/kaazing/robot) from grunt builds",
-    "version": "0.1.0",
+    "description": "Plugin to utilize k3po (https://github.com/k3po/k3po) from grunt builds",
+    "license" : "Apache-2.0",
+    "version": "0.1.0-alpha-1",
     "homepage": "https://github.com/kaazing/grunt-k3po",
     "author": {
         "name": "Kaazing",

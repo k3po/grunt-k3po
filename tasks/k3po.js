@@ -2,7 +2,6 @@
  * grunt-k3po
  * https://github.com/kaazing/grunt-k3po
  *
- * Copyright (c) 2014 David Witherspoon
  * Licensed under the APACHE 2 license.
  */
 
