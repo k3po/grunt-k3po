@@ -1,4 +1,7 @@
 # grunt-k3po
+[![Build Status][build-status-image]][build-status]
+[build-status-image]: https://travis-ci.org/k3po/grunt-k3po.svg?branch=develop
+[build-status]: https://travis-ci.org/k3po/grunt-k3po
 
 > Plugin to utilize k3po (https://github.com/kaazing/robot) from grunt builds
 
