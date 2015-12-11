@@ -26,7 +26,7 @@ module.exports = function (grunt) {
 
         mvn(function (err, mvnResults) {
             if (err) {
-                return console.error('could not resolve maven dependencies', err);
+                 grunt.fail.fatal('could not resolve maven dependencies' + err);
             }
             mvnResults.classpath.forEach(function (c) {
                 java.classpath.push(c);
